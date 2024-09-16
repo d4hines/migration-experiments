@@ -17,7 +17,7 @@ pub struct B {
 }
 
 pub struct C {
-    pub field1: bool,
+    pub field1: Option<u64>,
     pub field2: bool,
     pub field4: Vec<bool>,
 }
@@ -46,7 +46,7 @@ impl MigrateInto<B> for prev::B {
 impl MigrateInto<C> for prev::C {
     fn migrate(self) -> C {
         C {
-            field1: self.field1,
+            field1: if self.field1 { Some(99) } else { None },
             field2: self.field2,
             field4: vec![false],
         }
