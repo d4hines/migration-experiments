@@ -1,0 +1,10 @@
+[package]
+name = "v3"
+version = "0.1.0"
+edition = "2021"
+[lib]
+
+[dependencies]
+migration-utils = { path= "../utils" }
+v2 = {path ="../v2"}
+serde = { version = "1", features = ["derive"] }
