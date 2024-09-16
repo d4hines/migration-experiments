@@ -1,0 +1,22 @@
+[workspace]
+members = [
+    "bin",
+    "migrations/*",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A description of your project"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+tokio = { version = "1.28", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+clap = { version = "4.3", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
