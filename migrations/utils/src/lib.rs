@@ -15,4 +15,4 @@ macro_rules! impl_migrate_into_self {
     };
 }
 
-impl_migrate_into_self!(f64, i64, u64, bool);
+impl_migrate_into_self!(f64, i64, u64, bool, Option<u64>, Vec<bool>);
