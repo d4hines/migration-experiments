@@ -26,40 +26,23 @@ pub enum D {
 }
 impl MigrateInto<D> for prev::D {
     fn migrate(self) -> D {
-        match self {
-            prev::D::E1 { field1, field2 } => {
-                D::E1 {
-                    field1: field1.migrate(),
-                    field2: field2.migrate(),
-                }
-            }
-            prev::D::E2(field0) => D::E2(field0.migrate()),
-        }
+        todo!()
     }
 }
-use v4 as prev;
+use v3 as prev;
 impl MigrateInto<A> for prev::A {
     fn migrate(self) -> A {
-        A {
-            field1: self.field1.migrate(),
-            field2: self.field2.migrate(),
-        }
+        todo!()
     }
 }
 impl MigrateInto<B> for prev::B {
     fn migrate(self) -> B {
-        B {
-            field1: self.field1.migrate(),
-            field2: self.field2.migrate(),
-        }
+        todo!()
     }
 }
+
 impl MigrateInto<C> for prev::C {
     fn migrate(self) -> C {
-        C {
-            field1: self.field1.migrate(),
-            field2: self.field2.migrate(),
-            field4: self.field4.migrate(),
-        }
+        todo!()
     }
 }
