@@ -16,6 +16,11 @@ pub struct C {
     pub field4: Vec<bool>,
 }
 
+pub enum D {
+    E1 { field1: f64, field2: bool },
+    E2(f64),
+}
+
 use v2 as prev;
 
 impl MigrateInto<A> for prev::A {

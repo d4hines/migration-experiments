@@ -1,0 +1,24 @@
+[package]
+name = "tool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syn = { version = "2.0", default-features = false, features = [
+    "full",
+    "parsing",
+    "extra-traits",
+    "printing",
+    "visit",
+    "visit-mut",
+    "fold",
+    "extra-traits",
+    "clone-impls",
+] }
+quote = "1"
+prettyplease = { version = "0.2" }
+toml = "0.8.14"
+clap = { version = "4.5.4", features = ["derive"] }
+anyhow = "1"
+walkdir = "*"
+regex = "*"
