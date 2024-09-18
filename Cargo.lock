@@ -17,7 +17,7 @@ version = "0.1.0"
 dependencies = [
  "migration-utils",
  "serde",
- "v4",
+ "v5",
 ]
 
 [[package]]
@@ -376,6 +376,15 @@ dependencies = [
  "migration-utils",
  "serde",
  "v3",
+]
+
+[[package]]
+name = "v5"
+version = "0.1.0"
+dependencies = [
+ "migration-utils",
+ "serde",
+ "v4",
 ]
 
 [[package]]

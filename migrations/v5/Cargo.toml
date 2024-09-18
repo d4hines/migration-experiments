@@ -5,12 +5,12 @@ path = "../utils"
 features = ["derive"]
 version = "1"
 
-[dependencies.v5]
-path = "../v5"
+[dependencies.v4]
+path = "../v4"
 
 [lib]
 
 [package]
 edition = "2021"
-name = "alpha"
+name = "v5"
 version = "0.1.0"
